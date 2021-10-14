@@ -1,0 +1,100 @@
+* {
+	scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+}
+
+.about {
+	background-color: white !important;
+}
+.about a {
+	color: #39393a !important;
+}
+
+.section1 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(./img/about.jpg) center/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 65vh;
+	/* top: var(--nav-height); */
+	min-height: 386px;
+}
+
+.section1::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.233);
+	z-index: 1;
+}
+
+.title {
+	margin-top: 6.5rem;
+	outline: 5px solid #ffffff;
+	padding: 4rem 6rem 4rem 6rem;
+	color: #ffffff;
+    position: absolute;
+	font-size: 2rem;
+	z-index: 2;
+}
+
+.footer {
+	top: 0;
+}
+
+.content-top
+{
+	margin: 5%;
+	font-size: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	background: url(./img/bg3.jpg) center/cover;
+	color: white;
+	box-shadow: 8px 8px 25px black;
+	line-height: 2rem;
+}
+
+.chairman , .vice-chairman , .principal
+{
+	margin: 5%;
+	font-size: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	background-color: #0097fc3f;
+	text-align: justify;
+}
+.chairman h2 , .vice-chairman h2 , .principal h2 , .chairman h3 , .vice-chairman h3 , .principal h3
+{
+	text-align: center;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+.chairman p , .vice-chairman p , .principal p
+{
+	line-height: 2rem;
+	word-spacing: 0.3rem;
+}
+
+.principal ul
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	line-height: 2rem;
+	word-spacing: 0.3rem;
+}
+
+@media (max-width: 450px) {
+	.principal ul
+	{
+		padding: 0;
+	}
+}

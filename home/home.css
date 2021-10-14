@@ -1,0 +1,1006 @@
+* {
+	scroll-behavior: smooth;
+}
+
+.preload {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	z-index: 7;
+}
+
+.preload::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	background: url('https://free4kwallpapers.com/uploads/originals/2015/07/15/airplanes-sunset-with-aircraft-jet-hq-background-nice-hd.jpg')
+		center/cover;
+	content: '';
+}
+
+.preload::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	content: '';
+	backdrop-filter: blur(20px);
+}
+
+.preload div {
+	position: absolute;
+	width: max-content;
+	height: 30%;
+	z-index: 9;
+}
+
+.preload img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transform: translateY(100%);
+	opacity: 0;
+}
+
+.home {
+	background-color: white !important;
+}
+.home a {
+	color: #39393a !important;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	top: var(--nav-height);
+	align-content: center;
+	background: url(https://cdn.discordapp.com/attachments/843450590763679746/884065536244334592/avel-chuklanov-Ou1eqo29Ums-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: fit-content;
+	height: 7rem;
+	z-index: 3;
+	line-height: 40px;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+	color: white;
+	text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.hero-content span {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-size: 2.5rem;
+}
+
+.SHK-aviation {
+	width: 100%;
+	background-color: var(--theme);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	top: var(--nav-height);
+	padding: 8% 9%;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}
+
+.SHK-aviation div {
+	width: 100%;
+}
+
+.SHK-aviation h1 {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
+.SHK-aviation p {
+	line-height: 2rem;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+
+.SHK-aviation.grid div {
+	width: 65%;
+	transition: all 0.5s ease-in-out;
+}
+
+.quotes-carousel {
+	top: var(--nav-height);
+	background-color: #e5e5e5;
+	width: 100%;
+	height: 80vh;
+	position: relative;
+}
+
+.swiper {
+	width: 80%;
+	height: 80%;
+	border-radius: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 23px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 100% !important;
+	background-size: cover;
+}
+
+.swiper-slide::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide h1 {
+	position: absolute;
+	z-index: 1;
+	color: white;
+	width: 65%;
+	letter-spacing: 1px;
+	line-height: 2.5rem;
+}
+
+.swiper-slide img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-img-1 {
+	object-position: 0 -110px;
+}
+
+.carousel-img-2 {
+	object-position: 0 -110px;
+}
+
+.carousel-img-3 {
+	object-position: 0 -570px;
+}
+
+.swiper-button-next {
+	color: white !important;
+}
+
+.swiper-button-prev {
+	color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: white !important;
+}
+
+.slide-h1 {
+	overflow: hidden;
+}
+
+.slide-h1 span {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 2rem;
+	letter-spacing: 1px;
+}
+
+#author {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+.vision-and-mission {
+	position: relative;
+	top: var(--nav-height);
+	width: 100%;
+	height: 80vh;
+	text-align: justify;
+	background-color: var(--theme);
+	line-height: 2rem;
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.vision-and-mission h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+.vision-and-mission p {
+	margin-bottom: 2rem;
+}
+
+.vision {
+	position: absolute;
+	right: 6%;
+	width: 30%;
+}
+
+.mission {
+	position: absolute;
+	left: 6%;
+	width: 30%;
+	z-index: 1;
+}
+
+.mission h1 {
+	overflow: hidden;
+}
+
+.mission-ul {
+	list-style-type: none;
+}
+
+.SHK-heads {
+	width: 100%;
+	background-color: white;
+	position: relative;
+	top: var(--nav-height);
+	background-color: #ade8f4;
+	overflow: hidden;
+	padding: 4rem 6rem;
+	height: fit-content;
+}
+
+.SHK-heads > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.SHK-heads h1 {
+	margin-bottom: 1rem;
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+.heads {
+	display: flex;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3), -2px, -2px, 15px,
+		rgba(0, 0, 0, 0.3);
+	width: 24rem;
+	flex-direction: column;
+	padding: 0;
+	text-align: center;
+	transform-origin: center;
+	border-radius: 20px;
+}
+
+.heads-pos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0.5rem;
+	width: 100%;
+}
+
+.heads-pos div {
+	padding: 1rem 0;
+	background-color: #f8edeb;
+	height: 3rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.heads-pos div:nth-of-type(7) {
+	margin-bottom: 0;
+}
+
+.heads + div {
+	width: 35%;
+	position: relative;
+	z-index: 1;
+	letter-spacing: 1px;
+	line-height: 2rem;
+	text-align: justify;
+}
+
+.heads-pos div::after {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: end;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 4px;
+	height: 100%;
+	background: rgb(241, 120, 21);
+	transition: 0.5s ease-in-out;
+	transform: scale(0);
+	cursor: pointer;
+}
+
+.heads-pos div::before {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	text-align: end;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 4px;
+	height: 100%;
+	background: rgb(241, 120, 21);
+	transition: 0.5s ease-in-out;
+	transform: scale(0);
+	cursor: pointer;
+}
+
+.heads-pos div:hover::after,
+.heads-pos div:hover::before {
+	width: 50%;
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+.heads-pos div:nth-of-type(1):after {
+	content: 'Mr. B.';
+}
+
+.heads-pos div:nth-of-type(1)::before {
+	content: 'Haribabu';
+}
+
+.heads-pos div:nth-of-type(2):after {
+	content: 'Dr. H.';
+}
+
+.heads-pos div:nth-of-type(2)::before {
+	content: 'Srinivasan';
+}
+
+.heads-pos div:nth-of-type(3):after {
+	content: 'Mrs. H.';
+}
+
+.heads-pos div:nth-of-type(3)::before {
+	content: 'Pushpalatha';
+}
+
+.heads-pos div:nth-of-type(4):after {
+	content: 'Mrs. H.';
+}
+
+.heads-pos div:nth-of-type(4)::before {
+	content: 'Sujithra';
+}
+
+.heads-pos div:nth-of-type(5):after {
+	content: 'Mr. V.';
+}
+
+.heads-pos div:nth-of-type(5)::before {
+	content: 'Karthick';
+}
+
+.heads-pos div:nth-of-type(6):after {
+	content: 'Mr. J.N';
+}
+
+.heads-pos div:nth-of-type(6)::before {
+	content: 'Senthilkanna';
+}
+
+.heads-pos div:nth-of-type(7)::after {
+	content: 'Dr.N.';
+}
+
+.heads-pos div:nth-of-type(7)::before {
+	content: 'Janaki Manohar';
+}
+
+.head-content-title {
+	margin-bottom: 2rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contact-sec {
+	width: 100%;
+	background-color: #e5e5e5;
+	position: relative;
+	padding: 7% 0;
+	top: var(--nav-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.contact-title {
+	position: relative;
+	text-align: center;
+	top: -3rem;
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+.SHK-heads-aside {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	box-shadow: 2px 2px 15px black;
+	clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 9% 100%);
+	height: 152%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.vision-mission-aside {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 2px 15px black;
+	clip-path: polygon(0 0, 30% 0, 100% 115%, 0px 100%);
+	height: 152%;
+	z-index: 1;
+	overflow: hidden;
+}
+.contact-aside {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 2px 15px black;
+	height: 130%;
+	z-index: 1;
+	clip-path: polygon(0 0, 30% 0, 85% 100%, 0 100%);
+	overflow: hidden;
+}
+
+.contact-aside::after {
+	position: absolute;
+	background: url(https://jooinn.com/images/airplane-37.jpg) no-repeat;
+	width: 145%;
+	height: 130%;
+	content: '';
+	background-size: cover;
+	background-position: -80rem -10rem;
+	z-index: 1;
+}
+
+.SHK-heads-aside::after {
+	position: absolute;
+	background: var(--theme);
+	width: 145%;
+	height: 100%;
+	content: '';
+	z-index: 1;
+}
+
+.vision-mission-aside::after {
+	position: absolute;
+	width: 145%;
+	height: 100%;
+	content: '';
+	z-index: 1;
+	background-color: #8ecae6;
+}
+
+.input {
+	width: 40%;
+	height: 3rem;
+	resize: none;
+	position: relative;
+	margin: 2rem 0;
+	border-radius: 5px;
+	margin: 1.5rem 10rem;
+	outline: none;
+	border: none;
+	padding: 0 1.5rem 0 0;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.input:nth-of-type(1) {
+	left: 23%;
+	padding-left: 14%;
+}
+
+.input:nth-of-type(1):hover,
+.input:nth-of-type(1):focus {
+	left: 30%;
+	padding-left: 9%;
+}
+
+.input:nth-of-type(2) {
+	left: 28%;
+	padding-left: 16%;
+}
+
+.input:nth-of-type(2):hover,
+.input:nth-of-type(2):focus {
+	left: 35%;
+	padding-left: 9%;
+}
+
+.input:nth-of-type(3) {
+	left: 32%;
+	padding-left: 19%;
+}
+
+.input:nth-of-type(3):hover,
+.input:nth-of-type(3):focus {
+	left: 41%;
+	padding-left: 10%;
+	width: 35%;
+}
+
+.text-area {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 13rem;
+	padding: 2rem;
+	width: 40%;
+	resize: none;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+	left: -100%;
+}
+
+.submit,
+.next-submit {
+	position: relative;
+	left: -100%;
+	border-radius: 10px;
+	width: 10rem;
+	height: 2.5rem;
+	top: 25px;
+	text-align: center;
+	outline: none;
+	border: none;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	color: var(--theme);
+	background-color: white;
+}
+
+.next-submit {
+	padding: 0.7rem 4rem;
+}
+
+.submit:hover,
+.next-submit:hover {
+	background-color: var(--theme);
+	color: white;
+}
+
+@media (max-width: 950px) {
+	.hero-content {
+		font-size: 29px;
+	}
+}
+
+@media (max-width: 750px) {
+	.heads-pos {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 650px) {
+	.vision-and-mission {
+		height: 120vh !important;
+	}
+	.vision {
+		width: 100% !important;
+		height: fit-content !important;
+		left: 0;
+		flex-direction: column;
+		position: absolute;
+		bottom: 0;
+		padding: 4rem;
+	}
+
+	.mission {
+		width: 100% !important;
+		height: fit-content !important;
+		padding: 4rem;
+		left: 0 !important;
+		top: 0;
+		position: absolute;
+		background-color: #ade8f4;
+	}
+
+	.SHK-heads-aside,
+	.vision-mission-aside {
+		display: none !important;
+	}
+
+	.SHK-heads > div {
+		flex-direction: column;
+	}
+
+	.heads + div {
+		width: 100% !important;
+		right: 0% !important;
+		padding: 4rem;
+	}
+
+	.heads {
+		width: 100% !important;
+		border-radius: 0;
+		top: 0;
+		padding: 4rem 0;
+	}
+
+	.heads + div {
+		background-color: var(--theme);
+	}
+
+	.SHK-heads {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 900px) {
+	.hero {
+		background: url('https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg')
+			right/cover;
+	}
+
+	.hero::after {
+		position: absolute;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.2);
+		top: 0;
+		left: 0;
+	}
+
+	.hero-content {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		position: relative;
+		z-index: 4;
+	}
+
+	.SHK-heads-aside {
+		clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+	}
+
+	.vision-mission-aside {
+		clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+	}
+
+	.heads-pos div {
+		width: 80%;
+	}
+
+	.heads {
+		width: 50%;
+		left: 0 !important;
+	}
+
+	.contact-aside {
+		display: none;
+	}
+
+	.text-area {
+		left: -100%;
+	}
+
+	.contact-title {
+		margin-top: 10%;
+	}
+
+	.content-sec {
+		padding: 0;
+	}
+
+	.input {
+		position: relative !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 20rem !important;
+	}
+	.input:nth-of-type(1) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus {
+		left: 50%;
+		padding-left: 1rem;
+	}
+
+	.input:nth-of-type(2) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus {
+		left: 50% !important;
+		padding-left: 1rem;
+	}
+
+	.input:nth-of-type(3) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 50%;
+		padding-left: 1rem;
+		width: 40% !important;
+	}
+
+	.submit,
+	.next-submit {
+		left: -100%;
+	}
+}
+
+@media (max-width: 1500px) {
+	.SHK-heads-aside {
+		clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 25% 100%);
+	}
+
+	.contact-aside {
+		clip-path: polygon(0 0, 39% 0, 75% 100%, 0 100%);
+	}
+
+	.vision-mission-aside {
+		clip-path: polygon(0 0, 35% 0, 100% 143%, 0px 100%);
+	}
+
+	.input:nth-of-type(1) {
+		left: 25%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.vision-mission-aside,
+	.SHK-heads-aside {
+		clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+	}
+
+	.vision {
+		right: 10%;
+	}
+	.mission {
+		left: 10%;
+	}
+
+	.contact-sec {
+		background: url(https://jooinn.com/images/airplane-37.jpg) no-repeat
+			center/cover;
+	}
+
+	form {
+		z-index: 1;
+	}
+
+	.contact-title {
+		z-index: 1;
+		color: white;
+	}
+
+	.heads {
+		z-index: 1;
+		width: 20rem;
+		left: 7%;
+		position: relative;
+	}
+
+	.heads + div {
+		width: 38%;
+		right: 6%;
+	}
+
+	.SHK-heads {
+		padding: 4rem 0rem;
+	}
+
+	.contact-sec::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	.contact-aside {
+		display: none;
+	}
+
+	.input {
+		position: relative !important;
+		left: 50%;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 50% !important;
+	}
+	.input:nth-of-type(1),
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus,
+	.input:nth-of-type(2),
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus,
+	.input:nth-of-type(3),
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 50%;
+		padding-left: 1rem !important;
+		width: 70%;
+	}
+}
+
+@media (max-width: 500px) {
+	.vision-and-mission {
+		height: 135vh !important;
+	}
+	.slide-h1 {
+		top: 50%;
+		transform: translateY(-50%);
+		line-height: 2rem !important;
+	}
+	.slide-h1 span {
+		font-size: 1.5rem !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.vision-and-mission {
+		height: 140vh !important;
+	}
+	.hero {
+		background: url(https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg);
+		background-size: cover;
+		background-position: -29rem 0;
+	}
+}
+@media (max-width: 430px) {
+	.vision-and-mission {
+		height: 160vh !important;
+	}
+}
+@media (max-width: 400px) {
+	.SHK-heads {
+		padding: 4rem 2rem;
+	}
+.hero {
+	background-position: -18rem 0 !important;
+}
+	.preload div {
+		height: 20%;
+	}
+
+	.preload img {
+		height: 100% !important;
+	}
+	.vision-and-mission {
+		height: 170vh !important;
+	}
+	.hero-content span {
+		font-size: 1.5rem;
+	}
+	.SHK-aviation {
+		padding: 15% !important;
+	}
+
+	.input {
+		width: 75% !important;
+	}
+}
+
+@media (max-width: 370px) {
+	.vision-and-mission {
+		height: 185vh !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.vision-and-mission {
+		height: 185vh !important;
+	}
+}
+
+@media (max-width: 330px) {
+	.vision-and-mission {
+		height: 200vh !important;
+	}
+}
+
+@media (max-width: 320px) {
+	.vision-and-mission {
+		height: 205vh !important;
+	}
+}
+
+@media (max-width: 315px) {
+	.vision-and-mission {
+		height: 215vh !important;
+	}
+}
+
+/* 
+@media (max-width: 650px) {
+	.trying
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.mission , .vision
+	{
+		position: relative;
+	}
+	.vision-and-mission
+	{
+		position: relative;
+	}
+} */

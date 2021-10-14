@@ -1,0 +1,265 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.activities {
+	background-color: white !important;
+}
+.activities a {
+	color: #39393a !important;
+}
+
+.headerActivities {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("http://cdn.shopify.com/s/files/1/0510/8560/7099/files/The_Best_Laptop_Choice_for_College_Students-2.jpg?v=1620704757")
+		top/contain;
+	background-attachment: fixed;
+	width: 100%;
+	height: 70vh;
+	min-height: 386px;
+}
+
+.headerActivities::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	background: rgba(0, 0, 0, 0.6);
+
+	z-index: 0;
+}
+
+.titleActivities {
+	margin-top: 6.5rem;
+	position: relative;
+	border: 10px solid transparent;
+	padding: 5rem 8rem 5rem 8rem;
+	outline: 5px solid #c8e7f2;
+	padding: 5rem 8rem 5rem 8rem;
+	color: #c8e7f2;
+
+	font-size: 4rem;
+	z-index: 3;
+}
+.section3 {
+	position: relative;
+	height: 70vh;
+	background-color: #c8e7f2;
+}
+
+.title3Activities {
+	top: 15%;
+	position: absolute;
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+/* .bg {
+	position: relative;#ffc3c3
+   	height: 100%;
+   	width: 100%;
+   	background: url('https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg');
+   	z-index: 3;
+} */
+.section3Activities {
+	position: absolute;
+	top: 35%;
+	display: grid;
+	grid-template-areas: "grid1 grid2 grid3 grid4";
+	grid-column-gap: 2rem;
+
+	left: 50%;
+	transform: translateX(-50%);
+}
+h3 {
+	display: inline;
+	text-align: center;
+}
+.grid {
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: lighter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: sans-serif;
+	background-color: #334756;
+	color: rgb(240, 240, 240);
+	border-radius: 10px;
+}
+.grid1 {
+	grid-area: grid1;
+	height: 260px;
+	width: 260px;
+}
+.grid2 {
+	grid-area: grid2;
+	height: 260px;
+	width: 260px;
+}
+.grid3 {
+	grid-area: grid3;
+	height: 260px;
+	width: 260px;
+}
+.grid4 {
+	grid-area: grid4;
+	height: 260px;
+	width: 260px;
+}
+.txt-course {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	width: 120px;
+	height: 40px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: #000;
+	background-color: #f5f7fb;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0px 8px 15px rgba(47, 47, 47, 0.2);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+.btn:hover {
+	background-color: #29cccc;
+	box-shadow: 0px 15px 20px rgba(37, 184, 171, 0.4);
+	color: #f5f7fb;
+	transform: translateY(-7px);
+}
+
+.club {
+	background-color: #f5f7fb;
+}
+.camptitle {
+	position: relative;
+	padding-top: 10rem;
+	text-align: center;
+	font-size: 2rem;
+}
+.unopen {
+	position: relative;
+	margin-top: 10rem;
+	margin-right: auto;
+	margin-left: auto;
+	height: 400px;
+	width: 400px;
+	box-shadow: 50px 70px 140px 0 rgba(130, 136, 171, 0.2);
+	border-radius: 20px;
+}
+
+.image {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url("https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg")
+		top/cover;
+	border-radius: 20px;
+}
+.image1 {
+	background: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201911/ncc-770x433.jpeg?DcwuTnfzNu27AZAisWdIacVhxH9gdlRE")
+		top/cover;
+}
+.image2 {
+	background: url("https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/nss%20cadets%20rday%20parade%20pti_0.jpg")
+		top/cover;
+}
+.image3 {
+	background: url("https://s4.sathyainfo.com/s/2a3e418853024a4/img.jpeg")
+		center/cover;
+}
+.clubContentCard {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: 50px 70px 140px 0 rgba(130, 136, 171, 0.2);
+	background-color: white;
+}
+.clubContentCard2 {
+	border-radius: 0px 20px 20px 0px;
+}
+.clubContent {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 80%;
+	line-height: 2rem;
+	color: black;
+	text-align: justify;
+}
+
+@media (max-width : 400px) {
+	.section3
+	{
+		height: auto;
+	}
+	.title3Activities
+	{
+		position: relative;
+	}
+	.grid
+	{
+		width: 290px;
+	}
+	.section3Activities
+	{
+		grid-template-areas : 'grid1'
+							'grid2' 
+							'grid3' 
+							'grid4';
+		position: relative;
+	}
+	.headerActivities
+	{
+		background: url(http://cdn.shopify.com/s/files/1/0510/8560/7099/files/The_Best_Laptop_Choice_for_College_Students-2.jpg?v=1620704757) center/cover;
+	}
+	.titleActivities
+	{
+		padding: 4rem 2rem 4rem 2rem;
+	}
+	.grid
+	{
+		margin: 5% 10%;
+	}
+	.clubContentCard
+	{
+		width: 98%;
+		height: auto;
+		border-radius: 0;
+		left: 2%;
+	}
+	.image
+	{
+		width: 100%;
+		border-radius: 0;
+	}
+	.unopen
+	{
+		border-radius: 0;
+		width: 92%;
+		/* overflow: hidden; */
+	}
+}

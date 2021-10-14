@@ -1,0 +1,311 @@
+.placements {
+  background-color: white !important;
+}
+
+.placements a {
+  color: #39393a !important;
+}
+
+.section0 {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(236, 234, 234);
+  top: var(--nav-height);
+  position: relative;
+}
+
+.section0div {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.section0div h1 {
+  /* font-size: 30px; */
+  font-size: 35px;
+}
+
+.section0div p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.section1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../common/images/TrainingAndPlacements.png");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+  min-height: 386px;
+  top: var(--nav-height);
+}
+
+.section1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(46, 115, 204, 0.3); */
+  /* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)); */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+  
+}
+
+.title {
+  margin-top: 6.5rem;
+  outline: 5px solid #15ed39;
+  padding: 4rem 6rem 4rem 6rem;
+  color: #15ed39;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.section2 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background: url("https://wallpaperaccess.com/full/254431.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: var(--nav-height);
+}
+
+.section3 h1 {
+  position: absolute;
+  bottom: 40%;
+  font-size: 45px;
+  z-index: 4;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.section3 {
+  width: 100%;
+  height: 23vh;
+  position: relative;
+  background: rgb(236, 234, 234);
+  top: var(--nav-height);
+}
+
+.section3 img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-200px);
+}
+
+.section4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(236, 234, 234);
+  top: var(--nav-height);
+  padding-bottom: 20%;
+}
+
+#div {
+  height: 70vh;
+  width: 90vw;
+  margin-top: 90px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  overflow: hidden;
+}
+
+#div span {
+  height: 85%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+
+#div span h1 {
+  font-size: 35px;
+}
+#div span p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+h1 {
+  overflow: hidden;
+}
+
+.placementCell {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+.Training {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+.Recruiters {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+.placementContact {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+.Internship {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+.MOU {
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .section3 h1 {
+    font-size: 29px;
+  }
+  .section3 img {
+    transform: translateY(-180px);
+  }
+}
+
+@media (max-width: 760px) {
+  .section3 img {
+    transform: translateY(-100px);
+  }
+  .section0div p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  #div span p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 610px) {
+  .section3 h1 {
+    font-size: 25px;
+  }
+  .section3 img {
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 550px) {
+  .section3 h1 {
+    font-size: 20px;
+  }
+  .title {
+    padding: 3rem 4rem 3rem 4rem;
+    font-size: 2rem;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .title {
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 432px) {
+  .section3 h1 {
+    font-size: 20px;
+    display: none;
+  }
+
+  .section3 img {
+    transform: translateY(-80px);
+  }
+  .section0div h1 {
+    font-size: 25px;
+  }
+
+  .section0div p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  #div span h1 {
+    font-size: 30px;
+  }
+  #div span p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 360px) {
+  .section3 img {
+    transform: translateY(-40px);
+  }
+  .section2 {
+    height: 30vh;
+  }
+  .section0div h1 {
+    font-size: 23px;
+  }
+
+  .section0div p {
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  #div span h1 {
+    font-size: 30px;
+  }
+  #div span p {
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  .title {
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 1rem;
+    z-index: 2;
+  }
+}

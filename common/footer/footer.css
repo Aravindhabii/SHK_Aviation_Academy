@@ -1,0 +1,160 @@
+.footer {
+	position: relative;
+	background: rgb(61, 61, 61);
+	z-index: 2;
+	bottom: 0%;
+	top: var(--nav-height);
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	top: var(--nav-height);
+}
+
+.top {
+	position: relative;
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+
+.footerLeft {
+	position: relative;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.upper {
+	position: relative;
+	background: #fff;
+	height: 100%;
+	width: 50%;
+	border: 4px solid #000;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.upper img {
+	height: 90%;
+	width: 90%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.footerRight {
+	position: relative;
+	width: 50%;
+	display: flex;
+}
+
+.footerRight ul {
+	width: 50%;
+	list-style: none;
+}
+
+.footerRight ul li {
+	padding: 10px;
+	text-align: center;
+}
+
+.footerRight a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	transition: all 0.5 ease-in-out;
+}
+
+.footerRight a:hover {
+	text-decoration: underline;
+}
+
+.footerline {
+	width: 90%;
+	height: 2px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social {
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 25%;
+}
+
+.social img {
+	display: flex;
+}
+
+.copyrights {
+	position: relative;
+}
+
+.copyrights h1 {
+	font-size: 15px;
+	color: #fff;
+}
+
+@media only screen and (max-width: 1181px) {
+	.upper img {
+		height: 70%;
+		width: 70%;
+	}
+	
+}
+
+@media only screen and (max-width: 810px) {
+	.top {
+		width: 100%;
+		height: 55%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.upper img {
+		display: none;
+	}
+	.upper {
+		display: none;
+	}
+	.top {
+		justify-content: center;
+		align-items: center;
+	}
+	.footerLeft {
+		display: none;
+	}
+	.footerRight {
+		width: 90%;
+	}
+	.social img {
+		height: 30px;
+		width: 30px;
+	}
+	.copyrights h1 {
+		font-size: 10px;
+	}
+	.footerRight a {
+		font-size: 13px;
+	}
+}
